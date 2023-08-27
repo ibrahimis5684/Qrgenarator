@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #43d5d1;
+    position: relative;
+}
+
+
+form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #2d2d2d9f;
+    display: flex;
+    background: #1E222D;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    perspective: 1000px;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFFFFF; /* Change font color */
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateZ(40px);
+    color: #000000; /* Change font color */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #df2121, #3B82F6);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transform: translateZ(40px);
+}
+
+#qrimg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ED8936;
+    text-align: center;
+    transform: translateZ(40px);
+}
+
+#qrimg img {
+    max-width: 300px;
+    width: 100%;
+}
+
+#download {
+    text-decoration: none;
+    display: none;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #FBD38D, #ED8936);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateZ(40px);
+}
+
+#loading-message {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadein 1s forwards;
+    color: #FFFFFF; /* Change font color */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*-----------social media link-------*/
+
+.container{
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+#youtube,
+#instagram,
+#facebook{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/textanimation.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <!---text animation--->
+    <div class='console-container'>
+        <span id='text'></span>
+        <div class='console-underscore' id='console'>&#95;
+        </div>
+    </div>
+    <!----time clock--->
+    <div class="clock" aria-label="00:00:00 AM">
+        <div class="clock1">
+            <div class="clock__block clock__block--delay2" aria-hidden="true" data-time-group>
+                <div class="clock__digit-group">
+                    <div class="clock__digits" data-time="a">00</div>
+                    <div class="clock__digits" data-time="b">00</div>
+                </div>
+            </div>
+            <div class="clock__colon"></div>
+            <div class="clock__block clock__block--delay1" aria-hidden="true" data-time-group>
+                <div class="clock__digit-group">
+                    <div class="clock__digits" data-time="a">00</div>
+                    <div class="clock__digits" data-time="b">00</div>
+                </div>
+            </div>
+            <div class="clock__colon"></div>
+            <div class="clock__block" aria-hidden="true" data-time-group>
+                <div class="clock__digit-group">
+                    <div class="clock__digits" data-time="a">00</div>
+                    <div class="clock__digits" data-time="b">00</div>
+                </div>
+            </div>
+            <div class="clock__block clock__block--delay2 clock__block--small" aria-hidden="true" data-time-group>
+                <div class="clock__digit-group">
+                    <div class="clock__digits" data-time="a">PM</div>
+                    <div class="clock__digits" data-time="b">AM</div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!--main qr form-->
+    <form>
+        <h1>QR Code Generator</h1>
+        <input type="text" id="input" class="input value" placeholder="Enter Text or Link" />
+        <button type="button" id="btn" onclick="generateQR()" class="input submit">GENERATE</button>
+        <div id="loading-message">Generating, please wait...</div>
+        <div id="qrimg">QR code will display here</div>
+        <a id="download" href="#" download="qr_code.png">Download QR Code</a>
+    </form>
+    <!--social media-->
+    <body>
+        <div class="container">
+          <a href="https://www.youtube.com/channel/UCxq4mS8sd587rsyYociKu3w" target="_blank"><i class="fa fa-youtube" id="youtube"></i></a>
+
+          <a href="https://www.instagram.com/ibrahim094is/" target="_blank"><i class="fa fa-instagram" id="instagram"></i></a>
+
+          <a href="https://www.facebook.com/ibrahim094is" target="_blank"><i class="fa fa-facebook-square" id="facebook"></i></a>
+        </div>
+      </body>
+    <script src="java/script.js"></script>
+    <script src="java/textanimation.js"></script>
+    <script src="java/clock.js"></script>
+</body>
+
+</html>
